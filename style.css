@@ -1,0 +1,146 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    /* styling the header */
+}
+header{
+    width: 80%;
+    height: 10vh;
+    background-color: #fff;
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    margin: auto;
+    padding: 14px 10px;
+}
+/* styling header logo */
+header .logo{
+    font-size: 10px;
+}
+nav{
+    display: flex;
+    align-items: center;
+    column-gap: 10px ;
+  
+}
+
+nav ul{
+  
+    display: flex;
+   align-items: center;
+   border-right: 1px solid grey;
+   column-gap: 40px;
+   padding: 5px 20px 5px 0;
+}
+nav ul li{
+  list-style:none ;
+ 
+}
+.right-contact{
+    display: flex;
+    align-items: center;
+    column-gap: 10px;
+}
+nav .right-contact .assistance  p{
+    font-size: 16px;
+    line-height: 18px;
+}
+
+
+/* main styling */
+main{
+    height: 90vh;
+    width: 80%;
+    margin: auto;
+   
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+main .wrapper{
+    height: 80%;
+    width: 100%;
+   display: flex;
+}
+main .wrapper .left-text{
+    width: 50%;
+    height: 100%;
+     display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+   
+    
+}
+main .wrapper .left-text .content{
+    width: 80%;
+    font-size: 1.4em;
+    padding-right: 5px;
+    top: 256px;
+    position: absolute;
+    left: 10px;
+    top:40px;  
+}
+
+main .wrapper .left-text .content .button .btn{
+    color: #fff;
+    background-color: #FF6433;
+    border-radius: 15px;
+    margin:20px 0 ;
+    padding: 18px 28px;
+    border: none;
+}
+  
+
+   
+main .wrapper .left-text .content .open{
+    display: flex;
+    align-items: center;
+    column-gap: 5px;
+    font-size: 16px;
+    margin-top: 20px;
+}
+main .wrapper .left-text .content .open .date{
+  opacity: 1;
+   
+}
+
+/* styling the main right image  */
+main .wrapper .right-image{
+    width: 49%;
+    height: 100%;  
+   background-image: url("../img/Image.png");
+   background-position: center;
+   background-size: cover;
+   background-repeat: no-repeat;
+   position: relative;
+}
+main .wrapper .right-image .service{
+    position: absolute;
+    left:-20%;
+    top: 0;
+}
+
+main .wrapper .right-image .rating{
+    position: absolute;
+    right: -20%;
+    bottom: 0;
+}
+   /* pseudo classes*/
+   main .wrapper .left-text .content .button .btn:hover{
+    text-decoration: underline;
+    background-color: gray;
+    padding: 18px 28px;
+}
+nav ul li:hover{
+    text-decoration: underline;
+    background-color: gray;
+
+}
+main .wrapper .right-image .service:hover{
+    background-color: gold;
+    padding: 18px 28px;
+}
